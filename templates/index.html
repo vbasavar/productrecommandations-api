@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommandations API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <form action="{{ url_for('fetch_recs')}}" method="post">
+    	<input type="text" name="user_id" placeholder="userid" required="required" />
+        <button type="submit">Fetch Recommendations</button>
+    </form>
+    <br>
+    <br>
+    {{ Recommandation_text }}
+    <br>
+    {{ p1 }}
+    <br>
+    {{ p2 }}
+    <br>
+    {{ p3 }}
+    <br>
+    {{ p4 }}
+    <br>
+    {{ p5 }}
+
+</body>
+</html>
