@@ -7,7 +7,8 @@ app = Flask(__name__)
 
 @app.route("/recommandations", methods=["GET", "POST"])
 def fetch_recs():
-    return render_template("index.html", Recommandation_text="Below are the recommendations", p1="a", p2="a2",p3="a", p4="a2",p5="a")
+    x = random.randint(1, 9999)
+    return render_template("index.html", Recommandation_text="Below are the recommendations", p1="a".format(x), p2="a2".format(x),p3="a".format(x), p4="a2".format(x),p5="a".format(x))
 
 
 @app.route("/")
